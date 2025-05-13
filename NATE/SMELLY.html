@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Smelly Nate & Flying Poo</title>
+    <title>Smelly Nate & Smooth Flying Poo</title>
     <style>
         body {
             margin: 0;
@@ -31,6 +31,7 @@
             position: absolute;
             font-size: 3rem;
             pointer-events: none;
+            transition: left 1s ease, top 1s ease;
         }
     </style>
 </head>
@@ -43,7 +44,7 @@
     <script>
         const poo = document.getElementById('poo');
 
-        function movePooRandomly() {
+        function movePooSmoothly() {
             const maxX = window.innerWidth - 50;
             const maxY = window.innerHeight - 50;
             const x = Math.random() * maxX;
@@ -53,7 +54,7 @@
             poo.style.top = `${y}px`;
         }
 
-        setInterval(movePooRandomly, 500);
+        setInterval(movePooSmoothly, 1000);
     </script>
 </body>
 </html>
