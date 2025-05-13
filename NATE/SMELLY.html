@@ -12,9 +12,18 @@
             margin-top: 20%;
             font-size: 3em;
         }
+
+        .flash {
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
-    HELLO SMELLY NATE
+    HELLO SMELLY <span class="flash">NATE</span>
 </body>
 </html>
