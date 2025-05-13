@@ -2,41 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Truth Comes Out</title>
+  <title>hey you :)</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at center, #ff4d4d, #990000);
-      color: white;
+      background-color: #000;
+      background-image: 
+        linear-gradient(45deg, #8b0000 25%, transparent 25%),
+        linear-gradient(-45deg, #8b0000 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #8b0000 75%),
+        linear-gradient(-45deg, transparent 75%, #8b0000 75%);
+      background-size: 50px 50px;
+      background-position: 0 0, 0 25px, 25px -25px, -25px 0px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
     }
+
     h1 {
       font-size: 4em;
-      margin: 0;
-      color: #fff0f5;
-      text-shadow: 2px 2px 8px #800000;
-    }
-    .heart {
-      font-size: 5em;
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
+      font-weight: bold;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0.6em 1.2em;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
-  <div class="heart">❤️</div>
-  <h1>I love you more Hanna &lt;3</h1>
-  <div class="heart">❤️</div>
+  <h1>hey you :)</h1>
 </body>
 </html>
