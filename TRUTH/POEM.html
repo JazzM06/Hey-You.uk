@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Hanna 💘</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #b30059, #7a003f);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      gap: 1em;
+    }
+
+    .heart {
+      font-size: 3em;
+      transform: rotate(-20deg);
+      opacity: 0.7;
+    }
+
+    .heart.right {
+      transform: rotate(20deg);
+    }
+
+    .lyrics-container {
+      overflow: hidden;
+      height: 100%;
+      flex: 1;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .lyrics {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      text-align: center;
+      white-space: pre-wrap;
+      font-size: 1.8em;
+      line-height: 1.8;
+      animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        top: 100%;
+      }
+      100% {
+        top: -100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="heart">❤️</div>
+    <div class="lyrics-container">
+      <div class="lyrics">
+        I love to listen to your yap,<br>
+        So you should listen to this rap,<br>
+        Eyes like my favourite beer,<br>
+        So damn happy when you're near,<br>
+        I want to take you out for dinner at Spoons,<br>
+        Then stargaze outside under the moon,<br>
+        Hair like fresh spun Candy floss,<br>
+        Better than you? I'm at a loss.<br>
+        So even when you start to snore,<br>
+        I'll still love my Hanna more :)
+      </div>
+    </div>
+    <div class="heart right">❤️</div>
+  </div>
+</body>
+</html>
