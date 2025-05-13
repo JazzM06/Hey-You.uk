@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello Smelly Nate</title>
+    <title>Smelly Nate & Flying Poo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
             background-color: #fefefe;
-            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .center-text {
             text-align: center;
-            margin-top: 20%;
+            margin-top: 15%;
             font-size: 3em;
+            color: #333;
         }
 
         .flash {
@@ -21,9 +26,34 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
+
+        #poo {
+            position: absolute;
+            font-size: 3rem;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
-    HELLO SMELLY <span class="flash">NATE</span>
+    <div class="center-text">
+        HELLO SMELLY <span class="flash">NATE</span>
+    </div>
+    <div id="poo">💩</div>
+
+    <script>
+        const poo = document.getElementById('poo');
+
+        function movePooRandomly() {
+            const maxX = window.innerWidth - 50;
+            const maxY = window.innerHeight - 50;
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+
+            poo.style.left = `${x}px`;
+            poo.style.top = `${y}px`;
+        }
+
+        setInterval(movePooRandomly, 500);
+    </script>
 </body>
 </html>
