@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keith's Shitty Plumbing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #002b55; /* darker blue */
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      border: 20px solid transparent;
+      box-sizing: border-box;
+
+      /* Pipe border */
+      border-image-source: url('https://i.imgur.com/7fHMZkG.png');
+      border-image-slice: 30;
+      border-image-repeat: round;
+      border-image-width: 20px;
+      border-image-outset: 0;
+      border-image: url('https://i.imgur.com/7fHMZkG.png') 30 round;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      color: #001933;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .poo {
+      position: absolute;
+      font-size: 4rem;
+      z-index: 2;
+      user-select: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Keith's Shitty Plumbing</h1>
+    <p>Where the leaks are part of the charm.</p>
+  </div>
+
+  <div class="poo" id="poo">💩</div>
+
+  <script>
+    const poo = document.getElementById('poo');
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    let vx = (Math.random() -
